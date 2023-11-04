@@ -9,11 +9,18 @@
   </div>
 
   <div class="mt-5 flex justify-center">
+    
+    <div>
     <ul>
-      <li *ngFor="let repo of userRepos.items | paginate: { itemsPerPage: maxPerPage, currentPage: currentPage, totalItems: maxRepoLimiter() }"></li>
+      <li
+        *ngFor="let repo of userRepos.items | paginate: { itemsPerPage: maxPerPage, currentPage: currentPage, totalItems: maxRepoLimiter() }">
+      </li>
     </ul>
+    </div>
 
-    <pagination-controls (pageChange)="handlePageChange($event)" previousLabel="Older" nextLabel="Newer" [responsive]="true"></pagination-controls>
+    <pagination-controls (pageChange)="handlePageChange($event)" previousLabel="Older" nextLabel="Newer"
+      [responsive]="true"></pagination-controls>
+
   </div>
 
 </div>
@@ -21,4 +28,3 @@
 <div *ngIf="!userRepos?.total_count && !fetchingRepos">
   <app-error [error]="'No repos available :/'"></app-error>
 </div>
-  

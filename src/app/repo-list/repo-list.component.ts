@@ -7,6 +7,11 @@ import { GithubService } from '../github.service';
   styleUrls: ['./repo-list.component.scss'],
 })
 export class UserReposComponent implements OnChanges {
+
+  calculateTotalPages(): number {
+    return Math.ceil(this.userRepos.items.length / this.maxPerPage);
+  }
+
   // Takes totalPublicRepos and username from user-details component
   @Input() totalRepos!: number;
   @Input() username!: string;
