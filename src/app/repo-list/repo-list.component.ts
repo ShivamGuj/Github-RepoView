@@ -23,7 +23,7 @@ export class UserReposComponent implements OnChanges {
   maxPerPage = 10;
 
   // Injecting the Github Service
-  constructor(private githubService: GithubService) {}
+  constructor(private githubService: GithubService) { }
 
   // To fetch the repos again
   // if totalRepos && username gets updated

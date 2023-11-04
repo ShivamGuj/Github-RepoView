@@ -15,7 +15,7 @@ export class GithubService {
     Authorization: `token ${this.TOKEN_GITHUB}`,
     Accept: 'application/vnd.github.v3+json',
   });
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   BASE_URL = 'https://api.github.com';
 

@@ -9,15 +9,15 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
-  exports: [
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatGridListModule,
-    MatInputModule,
-    MatListModule,
-    MatSnackBarModule,
-    MatProgressSpinnerModule,
-  ],
+    exports: [
+        MatButtonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatGridListModule,
+        MatInputModule,
+        MatListModule,
+        MatSnackBarModule,
+        MatProgressSpinnerModule,
+    ],
 })
-export class MaterialModule {}
+export class MaterialModule { }

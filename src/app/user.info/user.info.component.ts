@@ -31,7 +31,7 @@ export class UserInfoComponent implements OnChanges {
   fetchingInfo: boolean = false;
 
   // Injecting the Github Service
-  constructor(private GithubService: GithubService) {}
+  constructor(private GithubService: GithubService) { }
 
   // Fetching the userInfo
   fetchUserInfo() {

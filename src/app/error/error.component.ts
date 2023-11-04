@@ -11,7 +11,7 @@ export class ErrorComponent implements OnInit {
 
   errorIcon = faExclamation;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

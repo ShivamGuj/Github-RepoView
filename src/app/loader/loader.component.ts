@@ -8,8 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LoaderComponent implements OnInit {
   @Input() text!: string;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
 
