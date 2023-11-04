@@ -1,4 +1,4 @@
-# Fyle Frontend Challenge
+# Fyle Frontend Challenge Assignment
 
 ### Install requirements
 * Install angular cli [Ref](https://angular.io/cli)
